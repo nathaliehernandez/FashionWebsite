@@ -1,0 +1,24 @@
+nav{
+    background-color: navy;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.center-text{
+    text-align:center;
+}
+
+.alignment-text{
+    align-items: center;
+}
