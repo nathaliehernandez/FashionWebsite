@@ -1,0 +1,47 @@
+body{
+    background-color: beige;
+}
+#header{
+    display: inline-flex
+}
+
+.search{
+    display: ;
+}
+
+nav{
+background-color: rgb(163, 171, 119);
+height: 20px;
+padding: 20px;
+border-radius: 10px;
+border:2px solid rgb(18, 68, 18)
+}
+nav ul li{ 
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+nav ul li a{
+    text-decoration:none;
+    color:white
+}
+.box{
+    background-color: rgba(227, 155, 93, 0.571);
+    border: ;
+}
+.logo-container{
+    margin: top 20px;
+    margin: bottom 20px;
+    margin: left 20px;
+    margin: right 20px;
+}
+.centered-text{
+    text-align: center;
+}
+.center-nav{
+     text-align: center;
+}
+footer
