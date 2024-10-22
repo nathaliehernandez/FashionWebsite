@@ -1,0 +1,89 @@
+body{
+    background-color: bisque;
+}
+
+.first-heading{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.featured{
+    text-align: center;
+}
+
+#header{
+    display: inline-flex;
+}
+
+.box{
+    align-items: center;
+    background-color: rgb(245, 236, 220);
+    height: fit-content;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+}
+
+.search{
+    height: 5%;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+.centered-text{
+    text-align: center;
+    margin: 70px ;
+}
+
+.center-nav{
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(93, 114, 93);
+    padding: 15px;
+}
+.center-nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.center-nav li{
+    display: inline;
+    margin: 15px;
+}
+.center-nav a:hover{
+    color: white;
+    text-decoration: underline;
+}
+a{
+    color: rgb(188, 186, 186);
+    text-decoration: none;
+}
+
+.product-item p{
+    margin: 0;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer ul{
+    list-style-type: none
+    padding 0
+}
+footer li{
+    display: inline;
+    margin: 15px;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
