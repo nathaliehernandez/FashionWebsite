@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(23, 25, 49);
+    background-color: bisque;
 }
 
 .first-heading{
@@ -8,38 +8,52 @@ body{
 
 }
 
+.featured{
+    text-align: center;
+}
+
 #header{
     display: inline-flex;
 }
 
 .box{
     align-items: center;
-    background-color: rgb(238, 226, 204);
+    background-color: rgb(245, 236, 220);
     height: fit-content;
     width: 100vw;
     position: fixed;
     top: 0px;
 }
+
 .search{
     height: 5%;
-    
 }
 
-.center-text{
-    text-align:center;
+#featuredproducts{
+    display: inline-flex;
+    margin: 11px;
 }
 
-.alignment-text{
-    align-items: center;
+footer{
+    background-color: black;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-
-.image-container{
-    display: flex;
-    justify-content: space-around;
-    color: rgb(0, 0, 0);
+footer ul{
+    list-style-type: none
+    padding 0
 }
-
-a{
+footer li{
+    display: inline;
+    margin: 15px;
+}
+footer ul li a{
     color: white;
     text-decoration: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
 }
