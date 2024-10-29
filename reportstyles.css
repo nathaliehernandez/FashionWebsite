@@ -71,6 +71,8 @@ a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
     margin: 20px;
 }
 .banner-images img{
