@@ -24,7 +24,7 @@ body{
 .search{
     height: 5%;
 }
-h1{
+.h1{
     text-align: center;
     margin: 20px;
 }
@@ -37,3 +37,21 @@ h1{
     margin: 20px;
     background-color: rgb(93, 114, 93);
     padding: 15px;
+}
+.center-nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.center-nav li{
+    display: inline;
+    margin: 15px;
+}
+.center-nav a:hover{
+    color: beige;
+    text-decoration: underline;
+}
+a{
+    color: rgb(188, 186, 186);
+    text-decoration: none;
+}
