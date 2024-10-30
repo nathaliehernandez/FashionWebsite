@@ -24,7 +24,6 @@ body{
     position: fixed;
     top: 0px;
 }
-
 .search{
     height: 5%;
 }
@@ -36,12 +35,17 @@ body{
     text-align: center;
     margin: 70px ;
 }
-
+.banner-image{
+    justify-content: space-around;
+    width: 100vw;
+    height: ;
+}
 .center-nav{
-    text-align: center;
-    margin: 20px;
-    background-color: rgb(93, 114, 93);
-    padding: 15px;
+text-align: center;
+margin: 20px;
+background-color: rgb(93, 114, 93);
+padding: 15px;
+border-radius: 5px;
 }
 .center-nav ul{
     list-style-type: none;
@@ -57,7 +61,7 @@ body{
     text-decoration: underline;
 }
 a{
-    color: rgb(188, 186, 186);
+    color: lightgray;
     text-decoration: none;
 }
 
