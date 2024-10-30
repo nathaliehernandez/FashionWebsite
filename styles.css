@@ -1,5 +1,5 @@
 body{
-    background-color: bisque;
+    background-color: rgb(190, 189, 189);
 }
 
 .first-heading{
@@ -30,7 +30,7 @@ body{
 }
 
 #featuredproducts{
-    display: inline-flex;
+    display: inline-block;
     margin: 11px;
 }
 
@@ -56,4 +56,10 @@ footer ul li a{
 }
 footer ul li a:hover{
     text-decoration: underline;
+}
+
+.caption{
+    font-family:'Lucida Grande';
+    font-weight: bold;
+    font-size:large;
 }
