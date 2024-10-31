@@ -1,5 +1,5 @@
 body{
-    background-color: bisque;
+    background-color: rgb(255, 248, 201);
 }
 .first-heading{
     text-align: center;
@@ -68,10 +68,12 @@ border-radius: 5px;
     color: white;
     text-decoration: underline;
 }
+
 a{
-    color: lightgray;
+    color: darkgray;
     text-decoration: none;
 }
+
 .product-item p{
     margin: 0;
 }
