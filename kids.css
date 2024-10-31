@@ -55,3 +55,32 @@ a{
     color: rgb(188, 186, 186);
     text-decoration: none;
 }
+.kids-header{
+    text-align: center;
+}
+#featuredproducts{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    position: relative;
+}
+
+.featured1{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30vw;
+    text-align: center;
+}
+
+.featured2{;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30vw;
+}
+
+.featured3{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30vw;
+}
