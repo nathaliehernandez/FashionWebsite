@@ -84,3 +84,27 @@ a{
     background-repeat: no-repeat;
     height: 30vw;
 }
+{Where I left off!!}
+footer{
+    background-color: black;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer ul{
+    list-style-type: none
+    padding 0
+}
+footer li{
+    display: inline;
+    margin: 15px;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
