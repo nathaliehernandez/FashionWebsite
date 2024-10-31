@@ -26,12 +26,13 @@ body{
     position: fixed;
     top: 0px;
 }
-
 .search{
-    height: 5%;
-    
+    align-items: center;
 }
-
+.search input{
+    padding: 5px;
+    margin-right: 5px;
+}
 .centered-text{
     text-align: center;
     margin: 70px ;
@@ -97,13 +98,12 @@ a{
     background-repeat: no-repeat;
     height: 30vw;
 }
-
 footer{
     background-color: black;
     text-align: center;
     padding:10px;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
 footer ul{
