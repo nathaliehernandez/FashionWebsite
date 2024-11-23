@@ -48,13 +48,13 @@ body{
     width: 100vw;
     height: 20px;
 }
-.banner-image {
-    transition: opacity 0.3s ;
-  }
-  
-  .banner-image {
-    opacity: 0.8; ]
-  }
+.banner-images img {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.banner-images img:hover {
+    transform: scale(1.1); 
+}
 .center-nav{
 text-align: center;
 margin: 20px;
