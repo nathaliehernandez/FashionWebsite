@@ -48,6 +48,13 @@ body{
     width: 100vw;
     height: 20px;
 }
+.banner-image {
+    transition: opacity 0.3s ;
+  }
+  
+  .banner-image {
+    opacity: 0.8; ]
+  }
 .center-nav{
 text-align: center;
 margin: 20px;
