@@ -35,7 +35,22 @@ body{
     padding: 5px;
     margin-right: 5px;
 }
+.banner-images {
+    display: flex;
+    justify-content: auto;
+    gap: 20px;/
+}
 
+.banner-images img {
+    width: 30vw; 
+    height: auto; 
+    transition: transform 0.3s ease;
+    border-radius: 8px; 
+}
+
+.banner-images img:hover {
+    transform: scale(1.1);
+}
 #login-container{
     align-items: center;
 }

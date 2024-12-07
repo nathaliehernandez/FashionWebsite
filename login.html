@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Fashionista Finds</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body> 
 
-    <form action="/server"></form>
-    <h3>Login Information</h3>
-        <label>
-            Username: <input type="text" placeholder="enter username"><br><br></label>
-            Password: <input type="text" placeholder="enter password"><br><br></label>
-        <input type="submit" value="Log in">    
+    <!--This is our Logo -->            
+    <header><div class="box" id="header">
+        <div id="header"></div>
+        <a href="fashionwebsite.html">
+            <img src="Preview.png" width="50%" alt="Fashionista Finds Logo" id="logo"></a>
+     <!-- This is our search bar-->
+        <div class="search" id="header">
+            <input type="text" placeholder="Search..."><button type="submit">Search</button>
+        </div>
     
+    <!--This is our login icon-->
+         <img src="Login Icon.jpg" alt="Login" id="logo" width="3%">
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+    
+    <!--This is our website name-->
+    <div class="centered-text">
+        <h1>Fashionista Finds</h1>
+    </div>
+
+<!--Login Form Section-->
+    <div class="login-container">
+    <form action="/server" class="login-form">
+    <h3>Login Information</h3>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter Username" required> 
+
+    <label for="password">Password:</label>
+    <input type="password" id="Password" placeholder="Enter password"required>
+
+    <input type="submit" value="Log in">    
+    </form>
 </body>
+
+</html>
