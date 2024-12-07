@@ -1,3 +1,21 @@
+p{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+a{
+    align-items: center;
+    align-content: center;
+}
+
+.product-item{
+    align-items: center;
+    text-align: center;
+}
+
 body{
     background-color: rgb(112, 99, 99);
     margin: 0px;
