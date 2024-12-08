@@ -1,71 +1,42 @@
-function generateStars(rating) {
-    console.log('Generating stars for rating:',rating);
-    let stars = '';
-    for (let i= <= 5; i++) {
-        stars += i <= rating? 
+let cartCount = 0; 
+const savedItems = []; /
+
+function saveToList(productName) {
+    if (!savedItems.includes(productName)) {
+        savedItems.push(productName);
+        cartCount++;
+        updateCartCount();
+        alert(`${productName} has been saved to your list!`);
+    } else {
+        alert(`${productName} is already in your list!`);
     }
-    console.log(' Generated stars:', stars);
-    return stars; 
 }
 
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-});
+function updateCartCount() {
+    const cartCountElement = document.getElementById("cart-count");
+    cartCountElement.textContent = cartCount;
+}
 
-const searchInput = document.querySelector('.search input');
-const productItems = document.querySelectorAll('.product-item');
-
-searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
-    productItems.forEach(item => {
-        const itemText = item.textContent.toLowerCase();
-        if (itemText.includes(query)) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
+document.querySelectorAll(".star-rating").forEach((ratingSection) => {
+    ratingSection.addEventListener("click", (event) => {
+        if (event.target.tagName === "SPAN") {
+            const selectedValue = event.target.dataset.value;
+            const display = ratingSection.parentElement.querySelector("#rating-display");
+            display.textContent = `Rating: ${selectedValue}`;
         }
     });
 });
 
-document.querySelectorAll('.banner-images img').forEach(image => {
-    image.addEventListener('mouseenter', () => {
-        image.style.transform = 'scale(1.1)';
-    });
-    image.addEventListener('mouseleave', () => {
-        image.style.transform = 'scale(1)';
-    });
-});
 
+const searchInput = document.querySelector(".search input");
+const searchButton = document.querySelector(".search button");
 
-document.querySelectorAll('#reviews').forEach(reviewSection => {
-    const reviewButton = document.createElement('button');
-    reviewButton.textContent = 'Add Review';
-    reviewButton.style.marginTop = '10px';
-    reviewSection.appendChild(reviewButton);
-
-    reviewButton.addEventListener('click', () => {
-        const newReview = prompt('Enter your review:');
-        if (newReview) {
-            const blockquote = document.createElement('blockquote');
-            blockquote.innerHTML = `<p>"${newReview}" - Anonymous</p>`;
-            reviewSection.appendChild(blockquote);
-        }
-    });
-});
-
-// Sticky header (optional)
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.box');
-    if (window.scrollY > 50) {
-        header.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+searchButton.addEventListener("click", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    if (query) {
+        alert(`Searching for: ${query}`);
     } else {
-        header.style.boxShadow = 'none';
+        alert("Please enter a search query.");
     }
 });
+
