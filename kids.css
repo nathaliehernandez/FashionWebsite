@@ -94,8 +94,10 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
     height: 30vw;
+    transition: transform 0.3s ease-in-out; 
+
 }
-footer{
+.footer{
     background-color: black;
     text-align: center;
     padding:10px;
