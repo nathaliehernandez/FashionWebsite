@@ -107,7 +107,28 @@ a{
     margin-top: 5px;
     font-size: 1rem;
 }
+#save-to-list {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+}
 
+
+
+#save-to-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#save-to-list a:hover {
+    color: #ff6347;
+}
 footer{
     background-color: black;
     text-align: center;
