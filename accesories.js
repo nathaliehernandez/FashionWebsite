@@ -7,6 +7,30 @@ function generateStars(rating) {
     console.log(' Generated stars:', stars);
     return stars; 
 }
+let saveList = JSON.parse(localStorage.getItem('saveList')) || [];
+
+// Function to update cart count
+function updateCartCount() {
+    document.getElementById('cart-count').textContent = saveList.length;
+}
+
+// Add item to the save list
+function addToSaveList(item) {
+    saveList.push(item);
+    localStorage.setItem('saveList', JSON.stringify(saveList));
+    updateCartCount();
+}
+
+// Remove item from the save list (if needed)
+function removeFromSaveList(item) {
+    saveList = saveList.filter(savedItem => savedItem.id !== item.id);
+    localStorage.setItem('saveList', JSON.stringify(saveList));
+    updateCartCount();
+}
+
+// Update cart count on page load
+document.addEventListener('DOMContentLoaded', updateCartCount);
+</script>
 
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
